@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d7k-u5-dn1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NJr-Xi-YDm">
+            <objects>
+                <viewController id="d7k-u5-dn1" customClass="ViewController" customModule="RatingSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7yI-kD-uYn"/>
+                        <viewControllerLayoutGuide type="bottom" id="F7q-Ff-Ia9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mvw-qW-TjC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-Hl-0qp" customClass="Star" customModule="RatingSystem" customModuleProvider="target">
+                                <rect key="frame" x="162" y="309" width="50" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V5O-pa-qb6"/>
+                                    <constraint firstAttribute="width" constant="50" id="m52-qP-xID"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="starTouched:" destination="d7k-u5-dn1" eventType="touchUpInside" id="Azt-kF-62d"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srb-zj-Iks" customClass="Star" customModule="RatingSystem" customModuleProvider="target">
+                                <rect key="frame" x="46" y="309" width="50" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Fem-zf-vMT"/>
+                                    <constraint firstAttribute="height" constant="50" id="bbc-CG-fqB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="starTouched:" destination="d7k-u5-dn1" eventType="touchUpInside" id="ReL-J7-oK7"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-Pu-HVc" customClass="Star" customModule="RatingSystem" customModuleProvider="target">
+                                <rect key="frame" x="220" y="309" width="50" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kl8-Wf-38y"/>
+                                    <constraint firstAttribute="width" constant="50" id="LK8-0S-RCp"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="starTouched:" destination="d7k-u5-dn1" eventType="touchUpInside" id="RnD-um-qUh"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6Y-5M-5lO" customClass="Star" customModule="RatingSystem" customModuleProvider="target">
+                                <rect key="frame" x="104" y="309" width="50" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="D9Y-j1-zCJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y6P-gk-7C4"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="starTouched:" destination="d7k-u5-dn1" eventType="touchUpInside" id="NF7-RX-4EB"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBl-Ve-2SY" customClass="Star" customModule="RatingSystem" customModuleProvider="target">
+                                <rect key="frame" x="278" y="309" width="50" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yc1-Nm-ydB"/>
+                                    <constraint firstAttribute="width" constant="50" id="xcn-2A-Qnh"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="starTouched:" destination="d7k-u5-dn1" eventType="touchUpInside" id="t5y-FE-epM"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="srb-zj-Iks" firstAttribute="top" secondItem="M6Y-5M-5lO" secondAttribute="top" id="Dmq-wW-DDK"/>
+                            <constraint firstItem="rgc-Hl-0qp" firstAttribute="leading" secondItem="M6Y-5M-5lO" secondAttribute="trailing" constant="8" id="Dql-5B-dYs"/>
+                            <constraint firstItem="srb-zj-Iks" firstAttribute="centerY" secondItem="mvw-qW-TjC" secondAttribute="centerY" id="HyZ-bB-O2l"/>
+                            <constraint firstItem="Gva-Pu-HVc" firstAttribute="top" secondItem="dBl-Ve-2SY" secondAttribute="top" id="Mqz-Cq-CNT"/>
+                            <constraint firstItem="dBl-Ve-2SY" firstAttribute="leading" secondItem="Gva-Pu-HVc" secondAttribute="trailing" constant="8" id="SPv-4B-l3l"/>
+                            <constraint firstItem="M6Y-5M-5lO" firstAttribute="top" secondItem="rgc-Hl-0qp" secondAttribute="top" id="XPa-ly-RrV"/>
+                            <constraint firstItem="rgc-Hl-0qp" firstAttribute="top" secondItem="Gva-Pu-HVc" secondAttribute="top" id="e31-2E-Z5T"/>
+                            <constraint firstItem="Gva-Pu-HVc" firstAttribute="leading" secondItem="rgc-Hl-0qp" secondAttribute="trailing" constant="8" id="g8t-1B-Zh9"/>
+                            <constraint firstItem="rgc-Hl-0qp" firstAttribute="centerX" secondItem="mvw-qW-TjC" secondAttribute="centerX" id="jog-64-atl"/>
+                            <constraint firstItem="M6Y-5M-5lO" firstAttribute="leading" secondItem="srb-zj-Iks" secondAttribute="trailing" constant="8" id="tkb-o8-iiB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="star0" destination="srb-zj-Iks" id="IIo-Xu-LPI"/>
+                        <outlet property="star1" destination="M6Y-5M-5lO" id="KxW-qR-Ieg"/>
+                        <outlet property="star2" destination="rgc-Hl-0qp" id="g9S-c6-uLE"/>
+                        <outlet property="star3" destination="Gva-Pu-HVc" id="3qc-HI-7tT"/>
+                        <outlet property="star4" destination="dBl-Ve-2SY" id="8Th-QP-84t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tn0-eF-Kzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="-108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
